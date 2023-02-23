@@ -1,0 +1,16 @@
+#buy-amount #amount{
+    width: 10px;
+    text-align: center;
+    border: 1px solid #ececee;
+ }
+ #buy-amount button:hover{
+     background-color: aquamarine;
+ }
+ #buy-amount button{
+     width: 35px;
+     height: 35px;
+     outline: none;
+     background: none;
+     border: 1px solid #ececee;
+     cursor: pointer;
+ }

@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./themify-icons.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour</title>
+</head>
+
+<body>
+
+
+    <div id="header">
+        <!-- Begin: Nav -->
+        <ul id="nav">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./band.html">Band</a></li>
+            <li><a href="./tour.html">Ticket</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./media.html">Media</a></li>
+
+            <li>
+                <a href="">
+                    More
+                    <i class="nav-arrow-down ti-angle-down"></i>
+                </a>
+                <ul class="subnav">
+                    <li><a href="#">Merchandise</a></li>
+                    <li><a href="#">Extras</a></li>
+                    <li><a href="media.html">Media</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!-- End: nav -->
+
+        <!-- begin: search button -->
+        <div class="search-btn">
+            <i class="search-icon ti-search"></i>
+        </div>
+        <div id="mobile-menu" class="mobile-menu-btn">
+            <i class="menu-icon ti-menu"></i>
+        </div>
+        <a href="#" class="fas ti-shopping-cart " onclick="shop()">
+            <div class="tamgiac"></div>
+
+        </a>
+        <div id="giohang" class="giohang">
+            <table>
+                <tr>
+                    <!-- <th>STT</th> -->
+                    <th>Hình</th>
+                    <th>Tên Sp</th>
+                    <th>Đơn giá</th>
+                    <th>Số lượng</th>
+                    <th>Thành Tiền</th>
+                    <th>Xoa</th>
+                </tr>
+                <tbody id="mycart">
+                </tbody>
+                <tr>
+                    <th colspan="5">Tổng số tiền</th>
+                    <th class="total-price">0</th>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+    <div id="content">
+
+
+        <!-- Tuor section -->
+        <div id="tour" class="tour-section">
+            <div class="content-section">
+                <h2 class="section-heading text-white">T I C K E T</h2>
+                <p class="section-sub-heading text-white">Remember to book your tickets!</p>
+
+                <ul class="tickets-list">
+                    <li>September <span class="sold-out">Sold out</span></li>
+                    <li>October <span class="sold-out">Sold out</span></li>
+                    <li>November <span class="quantity">3</span></li>
+                </ul>
+                <div class="row places-list">
+                    <div class="col col-third1">
+                        <img src="./anh1.jpg" alt="New York" class="place-img">
+                        <div class="place-body">
+                            <h3 class="place-heading">New York</h3>
+                            <p class="place-time">Fri 27 Nov 2016</p>
+                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <p class="view">Giá: <span>81</span>$</p>
+
+
+                            <button class="btn js-buy-ticket ti-shopping-cart">Buy Tickets</button>
+
+
+                        </div>
+                    </div>
+                    <div class="col col-third1">
+                        <img src="./anh2.jpg" alt="Paris" class="place-img">
+                        <div class="place-body">
+                            <h3 class="place-heading">Paris</h3>
+                            <p class="place-time">Sat 28 Nov 2016</p>
+                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <p class="view">Giá: <span>80</span>$</p>
+
+
+                            <button class="btn js-buy-ticket ti-shopping-cart">Buy Tickets</button>
+                        </div>
+                    </div>
+                    <div class="col col-third1">
+                        <img src="./anh3.jpg" alt="San Francisco" class="place-img">
+                        <div class="place-body">
+                            <h3 class="place-heading">San Francisco</h3>
+                            <p class="place-time">Sun 29 Nov 2016</p>
+                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
+                            <p class="view">Giá: <span>120</span>$</p>
+
+
+                            <button class="btn js-buy-ticket ti-shopping-cart">Buy Tickets</button>
+
+                        </div>
+                    </div>
+                    <div class="col col-third1">
+                        <img src="./assets/img/anh9.jpg" alt="New York" class="place-img">
+                        <div class="place-body">
+                            <h3 class="place-heading">Japan</h3>
+                            <p class="place-time">Frii 27 Nov 2016</p>
+                            <p class="place-desc">Praesent tincidunti sed tellus ut rutrum sed vitae justo.</p>
+                            <p class="view">Giá: <span>250</span>$</p>
+
+
+                            <button class="btn js-buy-ticket ti-shopping-cart">Buy Tickets</button>
+
+                        </div>
+
+                    </div>
+                    <div class="col col-third1">
+                        <img src="./assets/img/anh7.jpg" alt="Paris" class="place-img">
+                        <div class="place-body">
+                            <h3 class="place-heading">Switzerland</h3>
+                            <p class="place-time">Sat 28 Nov 2016</p>
+                            <p class="place-desc">Praesentt tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                            <p class="view">Giá: <span>290</span>$</p>
+
+
+                            <button class="btn js-buy-ticket ti-shopping-cart">Buy Tickets</button>
+
+                        </div>
+                    </div>
+                    <div class="col col-third1">
+                        <img src="./assets/img/anh8.jpg" alt="San Francisco" class="place-img">
+                        <div class="place-body">
+                            <h3 class="place-heading">Singapore</h3>
+                            <p class="place-time">Sunn 29 Nov 2016</p>
+                            <p class="place-desc">Praesent tincidunt sed tellus ut rutrum sed vitae justo</p>
+                            <p class="view">Giá: <span>320</span>$</p>
+
+
+                            <button class="btn js-buy-ticket ti-shopping-cart">Buy Tickets</button>
+                            <!--  -->
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+    <div id="footer">
+        <div class="socicals-list">
+            <a href="https://www.facebook.com/tayta.166"><i class="ti-facebook"></i></a>
+            <a href="https://www.instagram.com/tay_16.6/"><i class="ti-instagram"></i></a>
+            <a href=""><i class="ti-youtube"></i></a>
+            <a href=""><i class="ti-linux"></i></a>
+            <a href=""><i class="ti-pinterest"></i></a>
+            <a href=""><i class="ti-linkedin"></i></a>
+        </div>
+        <p class="copyright ">The Ban <a href="">.KienBanana</a></p>
+    </div>
+
+    <!-- <script src="./themsanpham.js"></script> -->
+
+    <script>
+        var header = document.getElementById('header');
+
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHight = header.clientHeight;
+
+        mobileMenu.onclick = function () {
+            var isClosed = header.clientHeight === headerHight;
+            if (isClosed) {
+                header.style.height = 'auto'
+            }
+            else {
+                header.style.height = null
+
+            }
+        }
+    </script>
+
+</body>
+
+</html>

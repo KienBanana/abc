@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./themify-icons.css">
+    <link rel="stylesheet" href="./style.css">
+    
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Band</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+    <link rel="shortcut icon" type="image/jpg" href="Favicon_Image_Location" />
+    <link rel="stylesheet" href="./dangnhap.html">
+    <link rel="stylesheet" href="./responsive.css">
+</head>
+
+<body>
+
+    <div id="main">
+        <div id="header">
+            <!-- Begin: Nav -->
+            <ul id="nav">
+                <li><a href="#">Home</a></li>
+                <li><a href="./band.html">Band</a></li>
+                <li><a href="./tour.html">Ticket</a></li>
+                <li><a href="./contact.html">Contact</a></li>
+                
+                <li class="none">
+                    <a href="">
+                        More
+                        <i class="nav-arrow-down ti-angle-down"></i>
+                    </a>
+                    <ul class="subnav">---
+                        <li><a href="#">Merchandise</a></li>
+                        <li><a href="#">Extras</a></li>
+                        <li><a href="./media.html">Media</a></li>
+                    </ul>
+                </li>
+                
+                
+            </ul>
+            <!-- End: nav -->
+
+
+            <!-- begin: search button -->
+            <div class="search-btn">
+                <i class="search-icon ti-search"></i>
+                
+            </div>
+            <div id="mobile-menu" class="mobile-menu-btn">
+                <i class="menu-icon ti-menu"></i>
+            </div>
+
+            <a href="./dangnhap.html">   <div class="user-tong  ">
+                <i class="user ti-user" onclick="hien()"></i>
+               <!-- <table class="giohang">
+
+               </table> -->
+            </div></a>
+            
+        </div>
+
+        <div id="slider-1">
+            <div class="text-content1">
+                <img id="img" onclick="Image()" src="./assets/img/chicago.jpg" alt="">
+                <h2 class="text-heading1">TICKET ON THE WORLD</h2>
+                <h2 class="text-heading1">BUY HERE!!!!</h2>
+            </div>
+            <!-- phần JS cho slide chạy và set thời gian --> 
+           <script>
+                var index = 1;
+                Image = function(){
+                    var imgs = ["./assets/img/chicago.jpg","./assets/img/anh4.jpg","./assets/img/anh5.jpg","./assets/img/ny.jpg"];
+                    document.getElementById("img").src = imgs[index];
+                    index++;
+                    if(index==4){
+                        index = 0;
+                    }
+                }
+                setInterval(Image,3000);
+            </script>
+
+        </div>
+
+        <div id="content">
+            <!-- End: Contact section -->
+            <div id="map" class="map-section">
+                <img src="./assets/img/anh10.jpg" alt="map">
+            </div>
+            <div id="map" class="map-sections">
+                <img src="./assets/img/anh13.jpg" alt="map">
+            </div>
+            <div id="footer">
+                <div class="socicals-list">
+                    <a href="https://www.facebook.com/tayta.166"><i class="ti-facebook"></i></a>
+                    <a href="https://www.instagram.com/tay_16.6/"><i class="ti-instagram"></i></a>
+                    <a href=""><i class="ti-youtube"></i></a>
+                    <a href=""><i class="ti-linux"></i></a>
+                    <a href=""><i class="ti-pinterest"></i></a>
+                    <a href=""><i class="ti-linkedin"></i></a>
+                </div>
+                <p class="copyright ">The Ban <a href="https://www.facebook.com/tayta.166">.KienBanana</a></p>
+            </div>
+
+        </div>
+
+
+
+    </div>
+    
+    <script>
+        var header = document.getElementById('header');
+        
+        var mobileMenu = document.getElementById('mobile-menu');
+        var headerHight = header.clientHeight;
+
+        mobileMenu.onclick = function(){
+            var isClosed = header.clientHeight === headerHight;
+            if (isClosed){
+                header.style.height = 'auto'
+            }
+            else {
+                header.style.height = null
+
+            }
+        }
+    </script>
+
+   
+   
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="text-content1">
+        <img id="img" onclick="Image()" src="./traolong.png" alt="">
+        <h2 class="text-heading1">TICKET ON THE WORLD</h2>
+        <h2 class="text-heading1">BUY HERE!!!!</h2>
+    </div>
+    <script>
+                var index = 1;
+                Image = function(){
+                    var imgs = ["./traolong.png","./tralongvang.png","./assets/img/anh5.jpg","./assets/img/ny.jpg"];
+                    document.getElementById("img").src = imgs[index];
+                    index++;
+                    if(index==2){
+                        index = 0;
+                    }
+                }
+                setInterval(Image,3000);
+    </script>
+      <form action="" method="POST" class="form" id="form-2">
+        <h3 class="heading">ĐĂNG NHẬP</h3>
+        <p class="desc"> </p>
+
+        <div class="spacer"></div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <input id="email" name="email" type="text" placeholder="VD: email@email.com" class="form-control">
+          <span class="form-message"></span>
+        </div>
+
+        <div class="form-group">
+          <label for="password" class="form-label">Mật khẩu</label>
+          <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+          <label for="password" class="form-label">Nhập lại mật khẩu</label>
+          <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+          <span class="form-message"></span>
+        </div>
+
+        <button class="form-submit">Đăng nhập</button>
+       
+        <button class="form-submitt"><i class="ti ti-google"> Đăng nhập với google</i></button>
+        
+      </form>
+      <style>
+        .form {
+    width: 360px;
+    min-height: 100px;
+    padding: 32px 24px;
+    text-align: center;
+    background: #fff;
+    border-radius: 40px;
+    margin: 24px;
+    align-self: center;
+    box-shadow: 0 2px 5px 0 rgba(51,62,73,.1);
+}
+.form .heading {
+    font-size: 2rem;
+}
+.form .desc {
+    text-align: center;
+    color: #636d77;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    line-height: 2.4rem;
+    margin-top: 16px;
+    font-weight: 300;
+}
+
+.form-group {
+    display: flex;
+    margin-bottom: 16px;
+    flex-direction: column;
+}
+
+.form-label,
+.form-message {
+    text-align: left;
+}
+
+.form-label {
+    font-weight: 700;
+    padding-bottom: 6px;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+}
+
+.form-control {
+    height: 40px;
+    padding: 8px 12px;
+    border: 1px solid #b3b3b3;
+    border-radius: 25px;
+    outline: none;
+    font-size: 1.4rem;
+}
+
+.form-control:hover {
+    border-color: black;
+}
+
+.form-group.invalid .form-control {
+    border-color: #f33a58;
+}
+
+.form-group.invalid .form-message {
+    color: #f33a58;
+}
+
+.form-message {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 4px 0 0;
+}
+
+.form-submit {
+    outline: none;
+    background-color: black;
+    margin-top: 12px;
+    padding: 12px 16px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+.form-submitt{
+    outline: none;
+    background-color: black;
+    margin-top: 12px;
+    padding: 4px 16px;
+    font-weight: 600;
+    color: #fff;
+    border: none;
+    width: 100%;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 25px;
+}
+
+.form-submit:hover {
+    background-color: black;
+}
+      </style>
+</body>
+</html>

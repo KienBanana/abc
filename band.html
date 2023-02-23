@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="./themify-icons.css">
+
+   
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Band</title>
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./responsive.css">
+
+</head>
+
+<body>
+    <div id="header">
+        <!-- Begin: Nav -->
+        <ul id="nav">
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./band.html">Band</a></li>
+            <li><a href="./tour.html">Ticket</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            
+            <li class="none">
+                <a href="">
+                    More
+                    <i class="nav-arrow-down ti-angle-down"></i>
+                </a>
+                <ul class="subnav">---
+                    <li><a href="#">Merchandise</a></li>
+                    <li><a href="#">Extras</a></li>
+                    <li><a href="./media.html">Media</a></li>
+                </ul>
+            </li>
+            
+            
+        </ul>
+    
+        <div class="search-btn">
+            <i class="search-icon ti-search"></i>
+            
+        </div>
+        <div id="mobile-menu" class="mobile-menu-btn">
+            <i class="menu-icon ti-menu"></i>
+        </div>
+
+        
+    </div>
+    
+    <!-- ##### -->
+    <div id="content">
+        <div id="band" class="content-section">
+            <h2 class="section-heading">THE BAND</h2>
+            <p class="section-sub-heading">We love music</p>
+            <p class="about-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur
+                adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                commodo consequat.</p>
+            <div class="row member-list">
+                <div class="col col-third text-center">
+                    <p class="member-name">Name</p>
+                    <img src="./bandmember.jpg" alt="Name" class="member-img">
+                </div>
+                <div class="col col-third text-center">
+                    <p class="member-name">Name</p>
+                    <img src="./bandmember.jpg" alt="Name" class="member-img">
+                </div>
+                <div class="col col-third text-center">
+                    <p class="member-name">Name</p>
+                    <img src="./bandmember.jpg" alt="Name" class="member-img">
+                </div>
+
+            </div>
+        </div>
+        <div id="footer">
+            <div class="socicals-list">
+                <a href="https://www.facebook.com/tayta.166"><i class="ti-facebook"></i></a>
+                <a href="https://www.instagram.com/tay_16.6/"><i class="ti-instagram"></i></a>
+                <a href=""><i class="ti-youtube"></i></a>
+                <a href=""><i class="ti-linux"></i></a>
+                <a href=""><i class="ti-pinterest"></i></a>
+                <a href=""><i class="ti-linkedin"></i></a>
+            </div>
+            <p class="copyright ">The Ban <a href="">.KienBanana</a></p>
+        </div>
+    </div>
+   
+
+</body>
+<script>
+    var header = document.getElementById('header');
+
+    var mobileMenu = document.getElementById('mobile-menu');
+    var headerHight = header.clientHeight;
+
+    mobileMenu.onclick = function () {
+        var isClosed = header.clientHeight === headerHight;
+        if (isClosed) {
+            header.style.height = 'auto'
+        }
+        else {
+            header.style.height = null
+
+        }
+    }
+</script>
+</html>

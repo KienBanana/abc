@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./themify-icons.css">
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body{
+            margin-top: 30px;
+            display: flex;
+            /* align-items: center;
+            justify-content: center; */
+            min-height: 50vh;
+        }
+        #buy-amount #amount{
+           width: 40px;
+           text-align: center;
+           border: 1px solid #ececee;
+        }
+        #buy-amount button:hover{
+            background-color: aquamarine;
+        }
+        #buy-amount button{
+            width: 35px;
+            height: 35px;
+            outline: none;
+            background: none;
+            border: 1px solid #ececee;
+            cursor: pointer;
+        }
+    </style>
+    <div id="buy-amount">
+        <button class="minus-btn" onclick="handleMinus()" ><i class="ti ti-minus"></i></button>
+        <input type="text" name="amount" id="amount" value="1">
+        <button class="plus-btn" onclick="handlePlus()"> <i class="ti ti-plus"></i> </button>
+     
+    </div>
+    <script>
+        let amountElement = document.getElementById('amount');
+        let amount = amountElement.value;
+        // console.log(amountElement)
+        let render = (amout) =>{
+            amountElement.value = amount
+        }
+        // xu ly handlePlus
+        let handlePlus = () =>{
+            console.log(amount)
+            amount++
+            render(amount); // cap nhap
+        }
+        let handleMinus = () =>{
+            if(amount > 1){
+                amount--;
+            }
+            console.log(amount)
+            render(amount);
+        }
+        amountElement.addEventListener('input',() =>{
+            amount = amountElement.value; // cap nhap du lieu ng nhap vao
+            amount = parseInt(amount);
+            amount = (isNaN(amount)|| amount==0)?1 :amount; // neu la text thi gia tri bang 1 nguoc lai gia tri
+            render(amount);
+            console.log(amount)
+        });
+    </script>
+</body>
+</html>

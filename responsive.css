@@ -1,0 +1,31 @@
+  /* Moblie */
+  @media(max-width: 740px){
+    #nav> li{
+      display: block;
+  }
+  #header .search-btn{
+    display: none;
+  }
+  #header{
+    overflow: hidden;
+  }
+  .user-tong{
+    display: none;
+  } 
+ 
+  #content .member-img{
+    width: 100px;
+  }
+}
+
+/* Tablet */
+@media (min-width:740px) and (max-width:1023px){
+  .tablet{
+    display: block;
+  }
+}
+
+/* Pc */
+@media (min-width: 1024px){
+  
+}
